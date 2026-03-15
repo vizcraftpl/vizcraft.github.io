@@ -1,63 +1,217 @@
 skills:
-  languages:
-    icon: mdi:code-braces
+  Softskills:
+    icon: fluent-color:people-16
     level: 85
     name:
-      en: "Languages"
-      pl: "Języki"
+      en: "Soft skills"
+      pl: "Umiejętności Miękkie"
     subskills:
-      - "Python"
-      - "JavaScript"
-      - "TypeScript"
-      - "Java"
-      - "SQL"
-      - "Bash"
-  frameworks:
-    icon: mdi:layers-outline
-    level: 80
-    name:
-      en: "Frameworks"
-      pl: "Frameworki"
-    subskills:
-      - "React"
-      - "Node.js"
-      - "Express"
-      - "Django"
-      - "Spring Boot"
-  cloud_devops:
-    icon: mdi:cloud-outline
-    level: 75
-    name:
-      en: "Cloud & DevOps"
-      pl: "Chmura i DevOps"
-    subskills:
-      - "AWS (EC2, S3, Lambda, RDS)"
-      - "Docker"
-      - "Kubernetes"
-      - "Terraform"
-      - "GitHub Actions"
-      - "Jenkins"
-  databases:
-    icon: mdi:database-outline
-    level: 70
-    name:
-      en: "Databases"
-      pl: "Bazy Danych"
-    subskills:
-      - "PostgreSQL"
-      - "MySQL"
-      - "MongoDB"
-      - "Redis"
-  tools:
-    icon: mdi:wrench-outline
+      - en: "Analytical problem‑solving"
+        pl: "Analityczne rozwiązywanie problemów"
+      - en: "Leadership & cross‑team collaboration"
+        pl: "Przywództwo i współpraca między zespołami"
+      - en: "Decision‑making under pressure"
+        pl: "Podejmowanie decyzji pod presją"
+      - en: "Process optimization & continuous improvement"
+        pl: "Optymalizacja procesów i ciągłe doskonalenie"
+      - en: "Clear communication & stakeholder management"
+        pl: "Jasna komunikacja i zarządzanie interesariuszami"
+      - en: "Coaching & knowledge sharing"
+        pl: "Coaching i dzielenie się wiedzą"
+      - en: "Adaptability & fast learning"
+        pl: "Adaptacyjność i szybkie uczenie się"
+  Data:
+    icon: fluent-color:data-trending-16
     level: 90
     name:
-      en: "Tools"
-      pl: "Narzędzia"
+      en: "Data"
+      pl: "Dane"
     subskills:
-      - "Git"
-      - "JIRA"
-      - "Confluence"
-      - "Postman"
-      - "VS Code"
-      - "IntelliJ IDEA"
+      - en: "Analytics (Senior)"
+        pl: "Analityka (Senior)"
+      - en: "Engineering (Mid)"
+        pl: "Inżynieria danych (Mid)"
+      - en: "Forecasting (Timeseries, Prophet)"
+        pl: "Prognozowanie (Szeregi czasowe, Prophet)"
+
+  Presentations:
+    icon: fluent-color:presenter-16
+    level: 85
+    name:
+      en: "Presentations"
+      pl: "Prezentacje"
+    subskills:
+      - en: "PowerPoint"
+        pl: "PowerPoint"
+      - en: "Design"
+        pl: "Projektowanie"
+      - en: "Storytelling"
+        pl: "Storytelling"
+
+  PowerBI:
+    icon: fluent-color:data-pie-24
+    level: 92
+    name:
+      en: "Power BI"
+      pl: "Power BI"
+    subskills:
+      - en: "Orchestration – Enhanced Refresh API & Power Automate"
+        pl: "Orkiestracja – Enhanced Refresh API i Power Automate"
+      - en: "Power Query | M"
+        pl: "Power Query | M"
+      - en: "Visual Design"
+        pl: "Projektowanie wizualne"
+      - en: "Star/Galaxy Schema"
+        pl: "Schemat gwiazdy/galaktyki"
+      - en: "DAX"
+        pl: "DAX"
+      - en: "Field Parameters"
+        pl: "Parametry pól"
+      - en: "ALM Toolkit"
+        pl: "ALM Toolkit"
+      - en: "TMDL"
+        pl: "TMDL"
+      - en: "Migration from Tableau"
+        pl: "Migracja z Tableau"
+
+  SQL:
+    icon: fluent-color:database-16
+    level: 88
+    name:
+      en: "SQL (Google)"
+      pl: "SQL (Google)"
+    subskills:
+      - en: "DDL, DML, DCL"
+        pl: "DDL, DML, DCL"
+      - en: "Scripting"
+        pl: "Skryptowanie"
+      - en: "CTE"
+        pl: "CTE"
+      - en: "Joins"
+        pl: "Złączenia"
+      - en: "Window, Navigation & Analytic Functions"
+        pl: "Funkcje okna, nawigacji i analityczne"
+      - en: "Exports"
+        pl: "Eksporty"
+      - en: "Query Performance & Cost Optimization"
+        pl: "Optymalizacja wydajności i kosztów zapytań"
+
+  Python:
+    icon: fluent-color:thinking-16
+    level: 80
+    name:
+      en: "Python"
+      pl: "Python"
+    subskills:
+      - en: "Scripting"
+        pl: "Skryptowanie"
+      - en: "NumPy & Pandas"
+        pl: "NumPy & Pandas"
+      - en: "ODBC"
+        pl: "ODBC"
+      - en: "NeuralProphet"
+        pl: "NeuralProphet"
+      - en: "PySpark"
+        pl: "PySpark"
+
+  Excel:
+    icon: fluent-color:document-table-16
+    level: 88
+    name:
+      en: "Excel"
+      pl: "Excel"
+    subskills:
+      - en: "Formulas"
+        pl: "Formuły"
+      - en: "Pivot Tables"
+        pl: "Tabele przestawne"
+      - en: "Power Query"
+        pl: "Power Query"
+      - en: "Power Pivot"
+        pl: "Power Pivot"
+      - en: "Charts"
+        pl: "Wykresy"
+      - en: "Arrays"
+        pl: "Tablice"
+
+  GoogleCloud:
+    icon: fluent-color:cloud-16
+    level: 78
+    name:
+      en: "Google Cloud"
+      pl: "Google Cloud"
+    subskills:
+      - en: "BigQuery"
+        pl: "BigQuery"
+      - en: "Dataform"
+        pl: "Dataform"
+      - en: "Cloud Storage"
+        pl: "Cloud Storage"
+      - en: "Cloud Functions"
+        pl: "Cloud Functions"
+      - en: "API / gcloud CLI"
+        pl: "API / gcloud CLI"
+
+  ContactCenter:
+    icon: fluent-color:headset-16
+    level: 75
+    name:
+      en: "Contact Center"
+      pl: "Contact Center"
+    subskills:
+      - en: "NICE IEX – Admin"
+        pl: "NICE IEX – Administracja"
+      - en: "Verint WFO"
+        pl: "Verint WFO"
+      - en: "Genesys Cloud"
+        pl: "Genesys Cloud"
+      - en: "SAP CRM & ERP"
+        pl: "SAP CRM & ERP"
+      - en: "MS Dynamics"
+        pl: "MS Dynamics"
+
+  Web:
+    icon: fluent-color:globe-16
+    level: 70
+    name:
+      en: "Web"
+      pl: "Web"
+    subskills:
+      - en: "JavaScript"
+        pl: "JavaScript"
+      - en: "HTML"
+        pl: "HTML"
+      - en: "CSS"
+        pl: "CSS"
+
+  Docker:
+    icon: fluent-color:box-16
+    level: 72
+    name:
+      en: "Docker"
+      pl: "Docker"
+    subskills:
+      - en: "Compose"
+        pl: "Compose"
+      - en: "Networking"
+        pl: "Sieciowanie"
+      - en: "Swarm"
+        pl: "Swarm"
+      - en: "Volumes"
+        pl: "Wolumeny"
+      - en: "Builds"
+        pl: "Budowanie obrazów"
+
+  Other:
+    icon: fluent-color:settings-16
+    level: 75
+    name:
+      en: "Other"
+      pl: "Inne"
+    subskills:
+      - en: "Windows"
+        pl: "Windows"
+      - en: "Linux"
+        pl: "Linux"
+      - en: "Git"
+        pl: "Git"

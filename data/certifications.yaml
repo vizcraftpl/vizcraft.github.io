@@ -1,27 +1,44 @@
 certifications:
   - name:
-      en: "AWS Certified Solutions Architect – Associate"
-      pl: "AWS Certified Solutions Architect – Associate"
-    issuer: "Amazon Web Services"
+      en: "Lean Six Sigma - Yellow Belt"
+      pl: "Lean Six Sigma - Żółty Pas"
+    issuer: "COPC"
     date:
-      en: "January 2023"
-      pl: "Styczeń 2023"
-    icon: "mdi:aws"
-    url: "https://aws.amazon.com/certification/"
+      en: "May 2021"
+      pl: "Maj 2021"
+    icon: "mdi:sigma-lower"
   - name:
-      en: "Certified Kubernetes Administrator (CKA)"
-      pl: "Certyfikowany Administrator Kubernetes (CKA)"
-    issuer: "Cloud Native Computing Foundation"
+      en: "IKEA World Data Games - 1st Place"
+      pl: "IKEA World Data Games - 1. Miejsce"
+    issuer: "IKEA"
     date:
-      en: "August 2022"
-      pl: "Sierpień 2022"
-    icon: "mdi:kubernetes"
-    url: "https://www.cncf.io/certification/cka/"
+      en: "May 2024"
+      pl: "Maj 2024"
+    icon: "twemoji:1st-place-medal"
   - name:
-      en: "Google Professional Data Engineer"
-      pl: "Google Professional Data Engineer"
-    issuer: "Google Cloud"
+      en: "SQL - Associate"
+      pl: "SQL - Specjalista"
+    issuer: "DataCamp"
     date:
-      en: "March 2021"
-      pl: "Marzec 2021"
-    icon: "mdi:google-cloud"
+      en: "March 2026"
+      pl: "Marzec 2026"
+    icon: "mdi:sql-query"
+    url: "https://www.datacamp.com/certificate/SQA0012316309574"
+  - name:
+      en: "Python - Data Associate"
+      pl: "Python - Specjalista Danych"
+    issuer: "DataCamp"
+    date:
+      en: "March 2026"
+      pl: "Marzec 2026"
+    icon: "material-icon-theme:python"
+    url: "https://www.datacamp.com/certificate/PDA0014926426913"
+  - name:
+      en: "DP-600 Fabric - Analytic Engineer"
+      pl: "DP-600 Fabric - Inżynier Analityki"
+    issuer: "Microsoft"
+    date:
+      en: "Exam in April 2026"
+      pl: "Egzamin w kwietniu 2026"
+    icon: "logos:microsoft-icon"
+

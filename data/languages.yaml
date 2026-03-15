@@ -6,6 +6,8 @@ languages:
       en: "Native"
       pl: "Język ojczysty"
   english:
+    en: "English"
+    pl: "Angielski"
     icon: circle-flags:gb
     level: 95
     proficiency:

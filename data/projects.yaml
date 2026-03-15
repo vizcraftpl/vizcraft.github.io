@@ -1,20 +1,13 @@
 projects:
-  - name: "Open Source API Rate Limiter"
+  - name: "YAML Resume Website"
     description:
-      en: "Built and published a Python library for API rate limiting with Redis backend, gaining 800+ GitHub stars"
-      pl: "Stworzyłem i opublikowałem bibliotekę Python do limitowania zapytań API z backendem Redis, zdobywając 800+ gwiazdek na GitHub"
+      en: "With the help of Claude I built a multi-language resume website that's generated dynamically from simple YAML files"
+      pl: "Z pomocą Claude zbudowałem wielojęzyczną stronę internetową z życiorysem generowanym dynamicznie z prostych plików YAML"
     technologies:
-      - "Python"
-      - "Redis"
-      - "PyPI"
-    url: "https://github.com/johnsmith/rate-limiter"
-  - name: "Personal Finance Dashboard"
-    description:
-      en: "Developed a full-stack web application for tracking personal finances with bank API integrations"
-      pl: "Stworzyłem aplikację full-stack do śledzenia finansów osobistych z integracją bankowych API"
-    technologies:
-      - "React"
-      - "Node.js"
-      - "PostgreSQL"
-      - "Plaid API"
-    url: "https://github.com/johnsmith/finance-dashboard"
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+      - "Github"
+      - "Claude"
+    url: "https://github.com/vizcraftpl/vizcraftpl.github.io"
+ 

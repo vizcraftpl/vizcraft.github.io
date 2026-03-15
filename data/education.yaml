@@ -1,7 +1,7 @@
 education:
   - degree:
       en: "High School Diploma"
-      pl: "Świadectwo Maturalne"
-    institution: "Your High School Name"
-    year: "2012"
+      pl: "Wykształcenie Średnie"
+    institution: "Liceum Ogólnokształcące im. Stefana Żeromskiego w Iławie"
+    year: "2014"
     icon: "mdi:school-outline"

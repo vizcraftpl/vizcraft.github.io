@@ -1,63 +1,238 @@
 experience:
   - company:
-      en: "Tech Solutions Ltd"
-      pl: "Tech Solutions Ltd"
+      en: "IKEA Retail Services AB"
+      pl: "IKEA Retail Services AB"
     location:
-      en: "London, UK"
-      pl: "Londyn, UK"
-    logo: "https://example.com/techsolutions.svg"
-    icon: "mdi:laptop"
-    start_date: "March 2020"
+      en: "Malmö, Sweden"
+      pl: "Malmö, Szwecja"
+    logo: 
+    icon:
+    start_date: 
+      en: "January 2023"
+      pl: "Styczeń 2023"
     end_date:
       en: "Present"
       pl: "Obecnie"
     positions:
       - job_title:
-          en: "Senior Software Engineer"
-          pl: "Starszy Inżynier Oprogramowania"
-        start_date: "March 2020"
+          en: "Global Demand & Capacity Specialist"
+          pl: "Globalny Specjalista ds. Popytu i Pojemności"
+        start_date: 
+          en: "January 2023"
+          pl: "Styczeń 2023"
         end_date:
           en: "Present"
           pl: "Obecnie"
         responsibilities:
-          - en: "Led a team of 6 engineers to deliver a microservices migration reducing system latency by 40%"
-            pl: "Kierowałem zespołem 6 inżynierów w migracji do mikrousług, zmniejszając opóźnienia systemu o 40%"
-          - en: "Architected and implemented RESTful APIs serving 2M+ daily active users"
-            pl: "Zaprojektowałem i wdrożyłem RESTful API obsługujące ponad 2 mln aktywnych użytkowników dziennie"
+          - en: "Served as SME in global customer service forecasting and financial planning, supporting multiple country teams with data‑driven insights and implementing global standard processes."
+            pl: "Pełniłem rolę eksperta (SME) w globalnym prognozowaniu obsługi klienta i planowaniu finansowym, wspierając zespoły krajowe w oparciu o dane i wdrażając globalne procesy standardowe."
+          - en: "Led automation initiatives, transforming recurring 5‑hour weekly tasks into fully automated workflows within the first quarter."
+            pl: "Prowadziłem inicjatywy automatyzacji, przekształcając powtarzalne 5-godzinne zadania tygodniowe w w pełni zautomatyzowane przepływy pracy w ciągu pierwszego kwartału."
+          - en: "Acted as a data champion by developing a widely adopted Power BI solution that delivers contact‑data insights to hundreds of global and local stakeholders for strategic decision‑making."
+            pl: "Działałem jako ambasador danych, rozwijając szeroko stosowane rozwiązanie Power BI dostarczające informacje o danych kontaktowych setkom globalnych i lokalnych interesariuszy na potrzeby strategicznego podejmowania decyzji."
+          - en: "Built strong data engineering capabilities with Google Cloud, BigQuery, and Python to design efficient data pipelines and optimize reporting processes."
+            pl: "Zbudowałem solidne kompetencje inżynierii danych z wykorzystaniem Google Cloud, BigQuery i Pythona, projektując wydajne potoki danych i optymalizując procesy raportowania."
   - company:
-      en: "Tech dupions Ltd"
-      pl: "Tech dupions Ltd"
+      en: "La Caravelle"
+      pl: "La Caravelle"
     location:
-      en: "London, UK"
-      pl: "Londyn, UK"
-    logo: "https://example.com/techsolutions.svg"
-    icon: "mdi:laptop"
-    start_date: "March 2020"
+      en: "Malmö, Sweden"
+      pl: "Malmö, Szwecja"
+    logo: 
+    icon:
+    start_date: 
+      en: "September 2025"
+      pl: "Wrzesień 2025"
     end_date:
       en: "Present"
       pl: "Obecnie"
     positions:
       - job_title:
-          en: "Senior Software Engineer"
-          pl: "Starszy Inżynier Oprogramowania"
-        start_date: "March 2019"
+          en: "Website & Social Media Manager"
+          pl: "Menedżer Strony Internetowej i Mediów Społecznościowych"
+        start_date: 
+          en: "September 2025"
+          pl: "Wrzesień 2025"
         end_date:
           en: "Present"
           pl: "Obecnie"
         responsibilities:
-          - en: "Led a team of 6 engineers to deliver a microservices migration reducing system latency by 40%"
-            pl: "Kierowałem zespołem 6 inżynierów w migracji do mikrousług, zmniejszając opóźnienia systemu o 40%"
-          - en: "Architected and implemented RESTful APIs serving 2M+ daily active users"
-            pl: "Zaprojektowałem i wdrożyłem RESTful API obsługujące ponad 2 mln aktywnych użytkowników dziennie"
+          - en: "Created and maintained the restaurant's website (lacaravelle.se), ensuring a modern, user‑friendly online presence."
+            pl: "Stworzyłem i utrzymywałem stronę internetową restauracji (lacaravelle.se), zapewniając nowoczesną i przyjazną dla użytkownika obecność online."
+          - en: "Managed social media channels (Facebook & Instagram), developing engaging content and maintaining consistent brand communication."
+            pl: "Zarządzałem kanałami mediów społecznościowych (Facebook i Instagram), tworząc angażujące treści i utrzymując spójną komunikację marki."
+          - en: "Ran successful advertising campaigns that generated a 200%+ increase in table bookings, driving significant growth in customer engagement and revenue."
+            pl: "Prowadziłem skuteczne kampanie reklamowe, które wygenerowały ponad 200% wzrost rezerwacji stolików, znacząco zwiększając zaangażowanie klientów i przychody."
+
+  - company:
+      en: "Self‑Employed"
+      pl: "Działalność Własna"
+    location:
+      en: "Wrocław, Poland"
+      pl: "Wrocław, Polska"
+    logo: 
+    icon: 
+    start_date: 
+      en: "September 2021"
+      pl: "Wrzesień 2021"
+    end_date: 
+      en: "December 2022"
+      pl: "Grudzień 2022"
+    positions:
       - job_title:
-          en: "Senior Software Engineer"
-          pl: "Starszy Inżynier Oprogramowania"
-        start_date: "March 2018"
-        end_date:
-          en: "Present"
-          pl: "Obecnie"
+          en: "WFM & Analytics Consultant"
+          pl: "Konsultant WFM i Analityki"
+        start_date: 
+          en: "September 2021"
+          pl: "Wrzesień 2021"
+        end_date: 
+          en: "December 2022"
+          pl: "Grudzień 2022"
         responsibilities:
-          - en: "Led a team of 6 engineers to deliver a microservices migration reducing system latency by 40%"
-            pl: "Kierowałem zespołem 6 inżynierów w migracji do mikrousług, zmniejszając opóźnienia systemu o 40%"
-          - en: "Architected and implemented RESTful APIs serving 2M+ daily active users"
-            pl: "Zaprojektowałem i wdrożyłem RESTful API obsługujące ponad 2 mln aktywnych użytkowników dziennie"
+          - en: "Implemented workforce management processes and built contact center performance reporting for a major German retail organization."
+            pl: "Wdrożyłem procesy zarządzania zasobami ludzkimi i zbudowałem raportowanie wyników contact center dla dużej niemieckiej organizacji detalicznej."
+          - en: "Performed transaction‑level analysis with SQL to surface operational insights."
+            pl: "Przeprowadzałem analizy na poziomie transakcji z użyciem SQL, wydobywając operacyjne wnioski."
+          - en: "Migrated multiple reporting solutions from Tableau to Power BI, improving usability and standardizing analytics."
+            pl: "Migrowałem wiele rozwiązań raportowych z Tableau do Power BI, poprawiając użyteczność i standaryzując analitykę."
+          - en: "Supported evaluation of new contact center platforms to enhance efficiency and scalability."
+            pl: "Wspierałem ocenę nowych platform contact center w celu poprawy wydajności i skalowalności."
+
+  - company:
+      en: "Teleperformance"
+      pl: "Teleperformance"
+    location:
+      en: "Katowice, Poland"
+      pl: "Katowice, Polska"
+    logo: 
+    icon: 
+    start_date: 
+      en: "October 2015"
+      pl: "Październik 2015"
+    end_date:
+      en: "August 2021"
+      pl: "Sierpień 2021"
+    positions:
+      - job_title:
+          en: "Business Analyst"
+          pl: "Analityk Biznesowy"
+        start_date: 
+          en: "October 2019"
+          pl: "Październik 2019"
+        end_date:
+          en: "August 2021"
+          pl: "Sierpień 2021"
+        responsibilities:
+          - en: "Designed, developed, and maintained performance, capacity, and quality reporting for three multichannel customer and technical support operations."
+            pl: "Projektowałem, rozwijałem i utrzymywałem raportowanie wyników, pojemności i jakości dla trzech wielokanałowych operacji wsparcia klienta i technicznego."
+          - en: "Led short‑ and long‑term capacity planning and managed local administration of NICE IEX WFM."
+            pl: "Prowadziłem krótko- i długoterminowe planowanie pojemności oraz zarządzałem lokalną administracją systemu NICE IEX WFM."
+          - en: "Supported financial planning and pricing processes, ensuring accurate, data‑driven decision‑making."
+            pl: "Wspierałem procesy planowania finansowego i wyceny, zapewniając dokładne podejmowanie decyzji oparte na danych."
+          - en: "Acted as stand‑in Operations Manager, contributing to strategic oversight and team leadership."
+            pl: "Pełniłem funkcję zastępczego Menedżera Operacyjnego, uczestnicząc w nadzorze strategicznym i przywództwie zespołu."
+          - en: "Participated in site‑level management decisions as a member of the leadership team."
+            pl: "Uczestniczyłem w decyzjach zarządczych na poziomie oddziału jako członek zespołu kierowniczego."
+          - en: "Early Power BI adopter, delivering advanced visualizations and mentoring colleagues to drive cross‑team adoption and build their first Power BI solutions."
+            pl: "Wczesny użytkownik Power BI – dostarczałem zaawansowane wizualizacje i mentoryzowałem współpracowników, wspierając adopcję narzędzia i budowę ich pierwszych rozwiązań Power BI."
+          - en: "Supported implementation of country‑level and global reporting standards to improve consistency and data quality."
+            pl: "Wspierałem wdrożenie krajowych i globalnych standardów raportowania w celu poprawy spójności i jakości danych."
+
+      - job_title:
+          en: "Workforce Analyst"
+          pl: "Analityk ds. Zasobów Ludzkich"
+        start_date: 
+          en: "September 2017"
+          pl: "Wrzesień 2017"
+        end_date:
+          en: "October 2019"
+          pl: "Październik 2019"
+        responsibilities:
+          - en: "Supported multi‑language technical support operations for global brands (50–200 FTE)."
+            pl: "Wspierałem wielojęzyczne operacje wsparcia technicznego dla globalnych marek (50–200 etatów)."
+          - en: "Monitored and analyzed real‑time KPIs, adjusting schedules and resources to meet operational needs and emerging trends."
+            pl: "Monitorowałem i analizowałem KPI w czasie rzeczywistym, dostosowując harmonogramy i zasoby do potrzeb operacyjnych i pojawiających się trendów."
+          - en: "Conducted short‑ and long‑term forecasting, workforce planning, and reporting to inform recruitment, training, and financial decisions."
+            pl: "Prowadziłem krótko- i długoterminowe prognozowanie, planowanie zasobów i raportowanie wspierające decyzje rekrutacyjne, szkoleniowe i finansowe."
+          - en: "Collaborated with clients, operations, HR, and site management to optimize workforce efficiency and service delivery."
+            pl: "Współpracowałem z klientami, operacjami, HR i zarządem oddziału w celu optymalizacji efektywności zasobów i świadczenia usług."
+          - en: "Built Excel‑based reporting and automations to streamline processes and improve performance."
+            pl: "Budowałem raportowanie i automatyzacje oparte na Excelu, usprawniając procesy i poprawiając wyniki."
+
+      - job_title:
+          en: "Team Manager"
+          pl: "Kierownik Zespołu"
+        dateStart: "2017-01"
+        dateEnd: "2017-08"
+        start_date: 
+          en: "January 2017"
+          pl: "Styczeń 2017"
+        end_date:
+          en: "August 2017"
+          pl: "Sierpień 2017"
+        responsibilities:
+          - en: "Led a team managing bulk processing and order‑cleanup activities in SAP CRM across the EMEA region."
+            pl: "Kierowałem zespołem zarządzającym masowym przetwarzaniem i porządkowaniem zamówień w SAP CRM w regionie EMEA."
+          - en: "Optimized workflows, ensured high data accuracy, and improved back‑office processing quality."
+            pl: "Optymalizowałem przepływy pracy, zapewniałem wysoką dokładność danych i poprawiałem jakość przetwarzania back-office."
+          - en: "Drove business process automation to reduce repetitive work and enhance productivity."
+            pl: "Wdrażałem automatyzację procesów biznesowych w celu redukcji powtarzalnej pracy i zwiększenia produktywności."
+          - en: "Provided strategic guidance and fostered cross‑team collaboration for seamless large‑scale operations."
+            pl: "Zapewniałem strategiczne wskazówki i wspierałem współpracę między zespołami na potrzeby sprawnych operacji na dużą skalę."
+
+      - job_title:
+          en: "Claims Case Manager"
+          pl: "Menedżer Spraw Reklamacyjnych"
+        dateStart: "2016-06"
+        dateEnd: "2016-12"
+        start_date: 
+          en: "June 2016"
+          pl: "Czerwiec 2016"
+        end_date:
+          en: "December 2016"
+          pl: "Grudzień 2016"
+        responsibilities:
+          - en: "Handled the most complex customer escalations nationwide, including technical product issues, safety incidents, and service‑related damages."
+            pl: "Obsługiwałem najbardziej złożone eskalacje klientów w całym kraju, w tym problemy techniczne z produktami, incydenty bezpieczeństwa i szkody związane z usługami."
+          - en: "Led an emergency response effort during a critical system outage, coordinating cross‑functional teams to restore broken service orders in the CRM and prevent multi‑million‑euro losses."
+            pl: "Kierowałem działaniami awaryjnymi podczas krytycznej awarii systemu, koordynując zespoły wielofunkcyjne w celu przywrócenia uszkodzonych zleceń serwisowych w CRM i zapobieżenia stratom rzędu milionów euro."
+          - en: "Served as a primary contact for major resellers, the Service Delivery team, and the national complaints coordinator, ensuring clear stakeholder communication."
+            pl: "Byłem głównym kontaktem dla dużych resellerów, zespołu Service Delivery i krajowego koordynatora reklamacji, zapewniając jasną komunikację z interesariuszami."
+          - en: "Made effective decisions under pressure and managed difficult conversations with professionalism and empathy."
+            pl: "Podejmowałem skuteczne decyzje pod presją i prowadziłem trudne rozmowy z profesjonalizmem i empatią."
+          - en: "One of only two specialists managing escalated cases across the country, ensuring fast resolution and high service quality."
+            pl: "Jeden z zaledwie dwóch specjalistów zarządzających eskalowanymi sprawami w całym kraju, zapewniający szybkie rozwiązania i wysoką jakość usług."
+
+      - job_title:
+          en: "Quality Assurance Specialist"
+          pl: "Specjalista ds. Jakości"
+        start_date: 
+          en: "February 2016"
+          pl: "Luty 2016"
+        end_date:
+          en: "May 2016"
+          pl: "Maj 2016"
+        responsibilities:
+          - en: "Evaluated and monitored customer support quality across voice, email, and chat channels, delivering targeted coaching for performance outliers."
+            pl: "Oceniałem i monitorowałem jakość wsparcia klienta w kanałach głosowych, e-mailowych i czatowych, zapewniając ukierunkowany coaching dla pracowników z odchyleniami wyników."
+          - en: "Analyzed customer satisfaction survey data to identify improvement opportunities and recommend process enhancements."
+            pl: "Analizowałem dane z ankiet satysfakcji klientów w celu identyfikacji możliwości poprawy i rekomendowania usprawnień procesów."
+          - en: "Standardized and rewrote scripts and response templates to improve clarity, consistency, and customer communication quality."
+            pl: "Standaryzowałem i przepisywałem skrypty oraz szablony odpowiedzi w celu poprawy jasności, spójności i jakości komunikacji z klientem."
+          - en: "Co‑led a CX improvement initiative that increased satisfaction from 60% to 80%, later adopted as a global best practice."
+            pl: "Współprowadziłem inicjatywę poprawy CX, która zwiększyła satysfakcję z 60% do 80%, później przyjętą jako globalna najlepsza praktyka."
+
+      - job_title:
+          en: "Backoffice Technical Support Admin"
+          pl: "Administrator Technicznego Wsparcia Back-Office"
+        start_date: 
+          en: "October 2015"
+          pl: "Październik 2015"
+        end_date:
+          en: "January 2016"
+          pl: "Styczeń 2016"
+        responsibilities:
+          - en: "Provided technical support via voice, email, and chat, troubleshooting hardware and software issues across diverse customer environments."
+            pl: "Zapewniałem wsparcie techniczne przez telefon, e-mail i czat, rozwiązując problemy sprzętowe i programowe w różnorodnych środowiskach klientów."
+          - en: "Managed bulk order processing, validated warranty exceptions, and coordinated email task assignments to streamline workflow and improve operational efficiency."
+            pl: "Zarządzałem masowym przetwarzaniem zamówień, weryfikowałem wyjątki gwarancyjne i koordynowałem przydzielanie zadań e-mailowych w celu usprawnienia przepływu pracy i poprawy efektywności operacyjnej."
