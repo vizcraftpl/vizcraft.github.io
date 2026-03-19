@@ -1,8 +1,11 @@
 // ============================================================
 // NAV
-// Depends on: state.js (manualActive, lastScrollY)
-//             utils.js (t)
+// Depends on: state.js, utils.js (t)
 // ============================================================
+
+function getNavSections() {
+  return [...document.querySelectorAll('[data-nav-section]')].map(s => s.id);
+}
 
 function buildLanguageSwitcher(data) {
   const languages = data.languages_available || data.languages;
@@ -15,17 +18,16 @@ function buildLanguageSwitcher(data) {
 
     languages.forEach(lang => {
       const code = lang.code;
-      const btn = document.createElement('button');
-      btn.className = 'lang-btn' + (code === currentLang ? ' active' : '');
+      const btn  = document.createElement('button');
+      btn.className    = 'lang-btn' + (code === currentLang ? ' active' : '');
       btn.dataset.lang = code;
-      btn.innerHTML = `<span class="iconify" data-icon="${lang.flag}" data-width="20"></span>`;
+      btn.innerHTML    = `<span class="iconify" data-icon="${lang.flag}"></span>`;
       btn.addEventListener('click', () => {
         currentLang = code;
         document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
         document.querySelectorAll(`.lang-btn[data-lang="${code}"]`).forEach(b => b.classList.add('active'));
         renderContent(cvData);
       });
-
       container.appendChild(btn);
     });
   });
@@ -36,31 +38,19 @@ function buildNav(data) {
   if (!navLinks) return;
   navLinks.innerHTML = '';
 
-  document.querySelectorAll('#right-col .section').forEach(section => {
-    const subsections = section.querySelectorAll('.subsection[id]');
-
-    if (subsections.length > 0) {
-      subsections.forEach(subsection => {
-        const tab = section.querySelector(`.subsection-tab[data-target="${subsection.id}"]`);
-        if (!tab || tab.style.display === 'none') return;
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="#${subsection.id}" data-subsection="${subsection.id}">${tab.textContent.trim()}</a>`;
-        navLinks.appendChild(li);
-      });
-    } else if (section.id) {
-  const li = document.createElement('li');
-  const label = section.querySelector('.section-title')?.textContent.trim() || section.id;
-  li.innerHTML = `<a href="#${section.id}">${label}</a>`;
-  navLinks.appendChild(li);
-}
-
+  getNavSections().forEach(id => {
+    const section = document.getElementById(id);
+    if (!section) return;
+    const label = section.querySelector('.section-title')?.textContent.trim() || id;
+    const li = document.createElement('li');
+    li.innerHTML = `<a href="#${id}" data-section="${id}">${label}</a>`;
+    navLinks.appendChild(li);
   });
 
-  // Mirror to mobile drawer
   const mobileNav = document.getElementById('mobile-nav-links');
   if (mobileNav) mobileNav.innerHTML = navLinks.innerHTML;
 
-  // Hamburger toggle
+  // Hamburger
   const hamburger = document.getElementById('hamburger');
   const drawer    = document.getElementById('mobile-drawer');
 
@@ -84,49 +74,39 @@ function buildNav(data) {
     });
   }
 
-  initScrollSpy();
+  // Bind nav link clicks
+  document.querySelectorAll('#nav-links a[data-section], #mobile-nav-links a[data-section]').forEach(link => {
+    if (link.dataset.bound) return;
+    link.dataset.bound = 'true';
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      showSection(link.dataset.section);
+    });
+  });
+
+  // Show first section by default
+  if (!currentSection) showSection(getNavSections()[0]);
 }
 
-function updateNavActive(targetId) {
-  document.querySelectorAll('#nav-links a, #mobile-nav-links a').forEach(a => {
-    const href = a.dataset.subsection || a.getAttribute('href')?.substring(1);
-    a.classList.toggle('active', href === targetId);
+function showSection(id) {
+  currentSection = id;
+
+  getNavSections().forEach(sid => {
+    const s = document.getElementById(sid);
+    if (s) s.style.display = sid === id ? '' : 'none';
   });
+
+  document.querySelectorAll('#nav-links a, #mobile-nav-links a').forEach(a => {
+    a.classList.toggle('active', a.dataset.section === id);
+  });
+}
+
+function updateNavActive(id) {
+  showSection(id);
 }
 
 function initScrollSpy() {
   if (initScrollSpy._bound) return;
   initScrollSpy._bound = true;
-  const sections = document.querySelectorAll('#right-col .section');
-
-  function onScroll() {
-    if (manualActive && Math.abs(window.scrollY - lastScrollY) > 50) {
-      manualActive = null;
-    }
-    if (manualActive) {
-      updateNavActive(manualActive);
-      return;
-    }
-
-    let active     = null;
-    let maxVisible = 0;
-
-    sections.forEach(section => {
-      const rect        = section.getBoundingClientRect();
-      const visibleTop  = Math.max(rect.top, 0);
-      const visibleBot  = Math.min(rect.bottom, window.innerHeight);
-      const visible     = Math.max(0, visibleBot - visibleTop);
-      if (visible > maxVisible) { maxVisible = visible; active = section; }
-    });
-
-    if (active) {
-      const activeSub = active.querySelector('.subsection.active');
-      updateNavActive(activeSub ? activeSub.id : active.id);
-    }
-
-    lastScrollY = window.scrollY;
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-  requestAnimationFrame(onScroll);
+  // scroll spy no longer needed — sections are shown/hidden via nav
 }

@@ -45,56 +45,52 @@
         <div class="language-switcher" id="language-switcher"></div>
       </nav>
 
-      <!-- Summary -->
+      <!-- Summary — always visible -->
       <section id="summary-section" class="section">
-        <div class="subsection-nav">
-          <button class="subsection-tab active" data-target="summary" data-label-key="summary">Summary</button>
-        </div>
-        <div id="summary" class="subsection active">
-          <p id="summary-text"></p>
-        </div>
+        <h2 class="section-title">Summary</h2>
+        <p id="summary-text"></p>
       </section>
 
-      <!-- Skills / Languages / Certifications -->
-      <section id="expertise" class="section">
-        <div class="subsection-nav">
-          <button class="subsection-tab active" data-target="skills-technical" data-label-key="skills_technical">Technical</button>
-          <button class="subsection-tab" data-target="skills-soft" data-label-key="skills_soft">Soft Skills</button>
-          <button class="subsection-tab" data-target="languages" data-label-key="languages">Languages</button>
-          <button class="subsection-tab" data-target="certifications" data-label-key="certifications">Certifications</button>
-        </div>
-        <div id="skills-technical" class="subsection active">
-          <div id="skills-grid-technical" class="skills-grid"></div>
-        </div>
-        <div id="skills-soft" class="subsection">
-          <div id="skills-grid-soft"></div>
-        </div>
-        <div id="languages" class="subsection">
-          <div id="languages-grid"></div>
-        </div>
-        <div id="certifications" class="subsection">
-          <div id="certifications-grid"></div>
-        </div>
+      <!-- Skills Technical -->
+      <section id="skills-technical" class="section" data-nav-section>
+        <h2 class="section-title" id="skills-technical-title"></h2>
+        <div id="skills-grid-technical" class="skills-grid"></div>
       </section>
 
-      <!-- Experience / Education / Projects -->
-      <section id="history" class="section">
-        <div class="subsection-nav">
-          <button class="subsection-tab active" data-target="experience" data-label-key="experience">
-            Experience <span id="experience-count" class="tab-badge"></span>
-          </button>
-          <button class="subsection-tab" data-target="education" data-label-key="education">Education</button>
-          <button class="subsection-tab" data-target="projects" data-label-key="projects">Projects</button>
-        </div>
-        <div id="experience" class="subsection active">
-          <div id="experience-timeline"></div>
-        </div>
-        <div id="education" class="subsection">
-          <div id="education-grid"></div>
-        </div>
-        <div id="projects" class="subsection">
-          <div id="projects-list"></div>
-        </div>
+      <!-- Skills Soft -->
+      <section id="skills-soft" class="section" data-nav-section>
+        <h2 class="section-title" id="skills-soft-title"></h2>
+        <div id="skills-grid-soft"></div>
+      </section>
+
+      <!-- Languages -->
+      <section id="languages-section" class="section" data-nav-section>
+        <h2 class="section-title" id="languages-title"></h2>
+        <div id="languages-grid"></div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications-section" class="section" data-nav-section>
+        <h2 class="section-title" id="certifications-title"></h2>
+        <div id="certifications-grid"></div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience-section" class="section" data-nav-section>
+        <h2 class="section-title" id="experience-title"></h2>
+        <div id="experience-timeline"></div>
+      </section>
+
+      <!-- Education -->
+      <section id="education-section" class="section" data-nav-section>
+        <h2 class="section-title" id="education-title"></h2>
+        <div id="education-grid"></div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects-section" class="section" data-nav-section>
+        <h2 class="section-title" id="projects-title"></h2>
+        <div id="projects-list"></div>
       </section>
 
       <footer>

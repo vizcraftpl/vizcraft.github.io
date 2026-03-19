@@ -30,4 +30,5 @@ function buildProfile(data) {
     `;
     list.appendChild(item);
   }
+  
 }

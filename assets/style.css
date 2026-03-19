@@ -65,6 +65,7 @@
   --gap:        1rem;
   --left-col:   clamp(180px, 22vw, 300px);
   --nav-h:      4rem;
+  --nav-icon-size: calc(var(--nav-h) * 0.5);
 
   /* Shape */
   --radius:    0.75rem;
@@ -75,7 +76,11 @@
 
   /* Typography */
   --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
-
+  --font-size: 1rem;
+  --font-size-l: calc(var(--font-size) * 1.15);
+  --font-size-sm:   calc(var(--font-size) * 0.85);
+  --font-size-xs:   calc(var(--font-size) * 0.75);
+  
   /* Inset glow — main surface (sections, nav, left card) */
   --inset-glow: 0px 0px 30px 10px var(--shadow-main) inset;
 
@@ -104,6 +109,7 @@ body {
   font-family: var(--font);
   background:  var(--bg);
   color:       var(--text);
+  font-size:   var(--font-size);
   min-height:  100vh;
   overflow-x:  hidden;
 }
@@ -139,7 +145,7 @@ a:hover { color: var(--text); }
 ───────────────────────────────────────────────────────── */
 
 /* Group 1 — main surface */
-#top-nav,
+
 .left-card,
 .section,
 #mobile-drawer {
@@ -163,7 +169,7 @@ a:hover { color: var(--text); }
 }
 
 /* Group 3 — pill buttons */
-.lang-btn,
+
 .hamburger {
   background:              var(--bg-main);
   backdrop-filter:         blur(8px);
@@ -285,85 +291,85 @@ a:hover { color: var(--text); }
 /* ─────────────────────────────────────────────────────────
    TOP NAV & MOBILE DRAWER
 ───────────────────────────────────────────────────────── */
-
 #top-nav {
-  position:    sticky;
-  top:         var(--gap);
-  z-index:     100;
-  display:     flex;
-  align-items: center;
-  gap:         var(--gap);
-  padding:     0.5rem var(--gap);
-}
-
-/* Shared nav link list — used by #top-nav and #mobile-drawer */
-.nav-links {
-  flex:            1;
-  display:         flex;
-  list-style:      none;
-  gap:             0.25rem;
-}
-
-.nav-links a {
+  position:        sticky;
+  top:             var(--gap);
+  z-index:         100;
   display:         flex;
   align-items:     center;
-  padding:         0.4rem 0.75rem;
-  color:           var(--text-muted);
-  font-size:       0.85rem;
-  font-weight:     500;
-  border-radius:   var(--radius-sm);
-  border-left:     3px solid transparent;
-  white-space:     nowrap;
-  transition:      color 0.2s var(--ease), background 0.2s var(--ease), border-color 0.2s var(--ease);
+  justify-content: flex-start;
+  gap:             calc(var(--gap) / 2) ;
 }
 
-.nav-links a:hover {
-  color:      var(--text);
-  background: var(--accent-glow-sm);
+.nav-links {
+  display:     flex;
+  list-style:  none;
+  gap:         calc(var(--gap) / 2);
+  align-items: center;
 }
 
-.nav-links a.active {
-  color:        var(--accent-light);
-  border-color: var(--accent);
+/* Shared blob style — nav links and lang buttons */
+.nav-links a,
+.lang-btn {
+  
+  display:                 flex;
+  align-items:             center;
+  height:  var(--nav-h);
+  padding: 0 var(--gap);
+  font-size:               var(--font-size-l);
+  font-weight:             500;
+  font-family:             var(--font);
+  white-space:             nowrap;
+  cursor:                  pointer;
+  color:                   var(--text-muted);
+  background:              var(--bg-main);
+  backdrop-filter:         blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border:                  1px solid var(--border);
+  border-radius:           calc(var(--radius) * 4);
+  box-shadow:              var(--inset-glow);
+  transition:              color 0.2s var(--ease), background 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+/* Lang button overrides — must come after shared block */
+.lang-btn {
+  width:           var(--nav-h);
+  padding:         0;
+  justify-content: center;
+}
+
+
+
+.lang-btn .iconify {
+  display: block;
+  width:   var(--nav-icon-size);
+  height:  var(--nav-icon-size);
+}
+
+
+.nav-links a:hover,
+.lang-btn:hover {
+  color:        var(--text);
+  border-color: var(--accent-glow-lg);
   background:   var(--accent-glow-sm);
-  box-shadow:   inset 3px 0 0.5rem var(--accent-glow-md);
+}
+
+.nav-links a.active,
+.lang-btn.active {
+  color:        var(--accent-light);
+  border-color: var(--accent-glow-lg);
+  background:   var(--accent-glow-sm);
+  box-shadow:   var(--inset-glow), inset 3px 0 0.5rem var(--accent-glow-md);
   text-shadow:  0 0 0.75rem var(--accent-shadow);
 }
 
-
-/* Language switcher — shared between nav and drawer */
+/* Language switcher */
 .language-switcher {
   display:     flex;
-  gap:         0.5rem;
-  margin-left: auto;
+  gap:         calc(var(--gap) / 2);
   flex-shrink: 0;
 }
 
-.lang-btn {
-  display:     flex;
-  align-items: center;
-  gap:         0.5rem;
-  padding:     0.4rem 0.75rem;
-  color:       var(--text-muted);
-  font-size:   0.85rem;
-  font-weight: 500;
-  font-family: var(--font);
-  cursor:      pointer;
-  transition:  all 0.2s var(--ease);
-}
-
-.lang-btn:hover {
-  border-color: var(--accent-glow-lg);
-  color:        var(--text);
-}
-
-.lang-btn.active {
-  background:   var(--accent-glow-sm);
-  border-color: var(--accent-glow-lg);
-}
-
-
-.lang-btn .iconify { flex-shrink: 0; }
 
 /* Hamburger button — desktop hidden, mobile shown via responsive */
 .hamburger {
@@ -452,6 +458,9 @@ a:hover { color: var(--text); }
   justify-content: flex-start;
 }
 
+#summary-section {
+  flex-grow: 1;
+}
 
 /* ─────────────────────────────────────────────────────────
    SUBSECTION TABS
@@ -1084,7 +1093,9 @@ footer {
   /* ── Top nav → hide, show hamburger ──────────────── */
   #top-nav    { display: none; }
   .hamburger  { display: flex; }
-
+   [data-nav-section] {
+    display: block !important;
+  }
   /* ── Skills / certs / languages → single column ─── */
   .skills-grid,
   #certifications-grid,

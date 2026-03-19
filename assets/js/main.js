@@ -16,7 +16,6 @@ function renderContent(data) {
   buildEducation(data);
   buildExperience(data);
   buildProjects(data);
-  initSubsectionTabs();
   initSectionTitleAnimations();
   const footer = document.getElementById('footer-text');
 if (footer) footer.textContent = `© ${new Date().getFullYear()} ${t(data.name)}`;

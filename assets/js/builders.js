@@ -184,17 +184,8 @@ function buildEducation(data) {
 
 function buildProjects(data) {
   const items = data.projects;
-  const tab   = document.querySelector('.subsection-tab[data-target="projects"]');
-  const panel = document.getElementById('projects');
+  if (!items || !items.length) return;
 
-  if (!items || !items.length) {
-    if (tab)   tab.style.display   = 'none';
-    if (panel) panel.style.display = 'none';
-    return;
-  }
-
-  if (tab)   tab.style.display   = '';
-  if (panel) panel.style.display = '';
 
   const list = document.getElementById('projects-list');
   if (!list) return;
@@ -232,8 +223,6 @@ function buildExperience(data) {
   if (!timeline) return;
   timeline.innerHTML = '';
 
-  const badge = document.getElementById('experience-count');
-  if (badge) badge.textContent = items.length;
 
   for (const job of items) {
     const employer = document.createElement('div');
@@ -346,13 +335,21 @@ requestAnimationFrame(() => {
 }
 
 
-// ── Section labels ──────────────────────────────────────────
-
 function updateSectionLabels(data) {
   const labels = data.section_labels;
   if (!labels) return;
-  document.querySelectorAll('.subsection-tab[data-label-key]').forEach(tab => {
-    const key = tab.dataset.labelKey;
-    if (labels[key]) tab.textContent = t(labels[key]);
-  });
+  const map = {
+    skills_technical: 'skills-technical-title',
+    skills_soft:      'skills-soft-title',
+    languages:        'languages-title',
+    certifications:   'certifications-title',
+    experience:       'experience-title',
+    education:        'education-title',
+    projects:         'projects-title',
+  };
+  for (const [key, elId] of Object.entries(map)) {
+    const el = document.getElementById(elId);
+    if (el && labels[key]) el.textContent = t(labels[key]);
+  }
 }
+
